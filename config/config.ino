@@ -3,7 +3,7 @@
 
 void setup() {
   Serial.begin(9600);
-  Serial.println(max_distance);
+  Serial.println(sensors[1].trigger);
 }
 
 void loop() {

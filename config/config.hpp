@@ -16,3 +16,18 @@
 
 // Maximum distance in millimeters
 #define max_distance 4000
+
+ class Sensor {   
+  public:         
+    String topic; 
+    int trigger;  
+    int echo;
+    Sensor(String tp, int tr, int e) {
+      topic = tp;
+      trigger = tr;
+      echo = e;
+    }
+
+};
+
+Sensor sensors[] = {Sensor("sensor_range_1", 12, 13), Sensor("sensor_range_1", 12, 13)};
